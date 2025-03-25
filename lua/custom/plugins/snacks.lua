@@ -24,6 +24,7 @@ return {
         -- wo = { wrap = true } -- Wrap notifications
       },
     },
+    git = { enabled = true },
   },
   keys = {
     -- Top Pickers & Explorer
