@@ -19,12 +19,8 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    styles = {
-      notification = {
-        -- wo = { wrap = true } -- Wrap notifications
-      },
-    },
     git = { enabled = true },
+    terminal = { enabled = true },
   },
   keys = {
     -- Top Pickers & Explorer
@@ -69,6 +65,21 @@ return {
         Snacks.explorer()
       end,
       desc = 'File Explorer',
+    },
+    -- terminal
+    {
+      '<leader>tt',
+      function()
+        Snacks.terminal.open()
+      end,
+      desc = 'Create New Terminal',
+    },
+    {
+      '<leader>tT',
+      function()
+        Snacks.terminal.toggle()
+      end,
+      desc = 'Toggle Terminal',
     },
     -- find
     {
@@ -134,6 +145,13 @@ return {
         Snacks.picker.git_log_line()
       end,
       desc = 'Git Log Line',
+    },
+    {
+      '<leader>gh',
+      function()
+        Snacks.git.blame_line()
+      end,
+      desc = 'Git Blame Line',
     },
     {
       '<leader>gs',
@@ -436,7 +454,7 @@ return {
       desc = 'Delete Buffer',
     },
     {
-      '<leader>cR',
+      '<leader>rR',
       function()
         Snacks.rename.rename_file()
       end,
@@ -467,7 +485,7 @@ return {
     {
       '<c-/>',
       function()
-        Snacks.terminal()
+        Snacks.terminal.open()
       end,
       desc = 'Toggle Terminal',
     },
