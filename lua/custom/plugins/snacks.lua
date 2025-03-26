@@ -21,6 +21,11 @@ return {
     words = { enabled = true },
     git = { enabled = true },
     terminal = { enabled = true },
+    styles = {
+      terminal = {
+        height = 12,
+      },
+    },
   },
   keys = {
     -- Top Pickers & Explorer
