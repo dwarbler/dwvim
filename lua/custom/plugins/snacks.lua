@@ -20,12 +20,9 @@ return {
     statuscolumn = { enabled = true },
     words = { enabled = true },
     git = { enabled = true },
+    lazygit = { enabled = true },
     terminal = { enabled = true },
-    styles = {
-      terminal = {
-        height = 12,
-      },
-    },
+    styles = {},
   },
   keys = {
     -- Top Pickers & Explorer
